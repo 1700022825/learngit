@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+/**
+ * Created by shaojianxuan on 2018/3/9.
+ */
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double number1 = input.nextDouble();
+        double number2 = input.nextDouble();
+        double number3 = input.nextDouble();
+        double number4 = input.nextDouble();
+
+        DecimalFormat df = new DecimalFormat("#.0");
+
+        double watermelon = (number1 * 1.2);
+        double peach = (number2 * 3.5);
+        double putao = (number3 * 4.5);
+        double apple = (number4 * 5.0);
+        double total = watermelon + peach + putao + apple;
+
+
+
+        System.out.println(df.format(watermelon));
+        System.out.println(df.format(peach));
+        System.out.println(df.format(putao));
+        System.out.println(df.format(apple));
+        System.out.println(df.format(total));
+
+
+
+
+
+
+
+
+    }
+}
